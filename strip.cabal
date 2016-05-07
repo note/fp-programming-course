@@ -1,10 +1,10 @@
-name:             strip
+name:             fp
 version:          0.0.0
 license:          MIT
 license-file:     LICENSE
-copyright:        (c) 2013 Simon Hengel
-author:           Simon Hengel <sol@typeful.net>
-maintainer:       Simon Hengel <sol@typeful.net>
+copyright:        (c) 2013 Michal Grygierzec & Michal Sitko
+author:           Michal Grygierzec & Michal Sitko
+maintainer:       Michal Grygierzec & Michal Sitko
 build-type:       Simple
 cabal-version:    >= 1.8
 
@@ -14,7 +14,7 @@ library
   hs-source-dirs:
       src
   exposed-modules:
-      Data.String.Strip
+      Fp.Recursion
   build-depends:
       base    == 4.*
 
@@ -29,5 +29,5 @@ test-suite spec
       Spec.hs
   build-depends:
       base    == 4.*
-    , strip
+    , fp
     , hspec   == 2.*
