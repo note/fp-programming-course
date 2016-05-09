@@ -31,3 +31,21 @@ spec = do
             it "should be 87178291200" $ do
                 factorial 14 `shouldBe` 87178291200
 
+    describe "fibb 0" $ do
+                it "should be 0" $ do
+                    fibb 0 `shouldBe` 0
+
+    describe "fibb 1" $ do
+                it "should be 1" $ do
+                    fibb 1 `shouldBe` 1
+
+    describe "fibb 2 and next" $ do
+                it "should be computed according to formula" $ do
+                    map (\x -> fibb x) [2..8] `shouldBe` [1, 2, 3, 5, 8, 13, 21]
+
+    describe "fibb" $ do
+                    it "should work for big input" $ do
+                        fibb 43 `shouldBe` 433494437
+
+
+
