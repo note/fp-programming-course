@@ -122,8 +122,11 @@ Na koniec, tę samą funkcję wyrażamy wykorzystując tzw. *wyrażenie lambda*.
 Spróbuj określić, co zwrócą poniższe wyrażenia:
 
 1. `let x = 5 in x`
+
 2. `let x = 5 in x * x`
+
 3. `let x = 5; y = 6 in x * y`
+
 4. `let x = 3; y = 1000 in x + 3`
 
 Weźmy przykład nr 3 i zapiszmy go w pliku:
@@ -138,7 +141,9 @@ Weźmy przykład nr 3 i zapiszmy go w pliku:
 Zapisz w REPL:
 
 - `(\x -> x) 0`
+
 - `(\x -> x) 1`
+
 - `(\x -> x) "blah"`
 
 Co to jest za funkcja?
@@ -174,8 +179,82 @@ Przykład:
 Przepisz poniższe wyrażenie użwyając notacji `where` (w pliku *.hs)
 
 1. `let x = 3; y = 1000 in x * 3 + y`
+
 2. `let y = 10; x = 10 * 5 + y in x * 5`
+
 3. `let x = 7; y = negate x; z = y * 10 in z / x + y`
 
 ### 9. String - łańcuchy znaków
 
+Na początek przyjrzyjmy się różnym typom.
+
+Typy sprawdza się poleceniem `:type` (w skrócie `:t`)
+
+
+    :t 'a'
+
+    :t "Hello!"
+
+    :i String
+
+
+`:i` to `:info` - służy do wyświetlania informacji na temat operatorów, funkcji, itd.
+
+Do wypisywania stringów służy polecenie `print`:
+
+    print "Hello!"
+
+Mamy również polecenie:
+
+    putStrLn "Hello!"
+
+oraz
+
+    putStr "Hello!"
+
+Czym one się różnią?
+
+
+Czas na załadowanie pliku `print1.hs`
+
+Kolejny plik to `print2.hs`
+
+Co dzieje się w kolejnych linijkach?
+
+#### Ćwiczenia
+
+Czy coś należy poprawić w poniższych linijkach?
+
+1. `++ [1, 2, 3] [4, 5, 6]`
+
+2. `'<3' ++ ' Haskell'`
+
+3. `concat ["<3", " Haskell"]`
+
+Sprawdź w *REPL*!
+
+#### Funkcje do operacji na listach
+
+1.  Operator `:` - (tzw. *cons*). Służy do dodawania elementu do listy
+
+    `'r' : "yba"`
+
+2.  `head` - zwraca pierwszy element listy
+
+    `head "head"`
+
+3.  `tail` - zwraca całą listę z wyjątkiem pierwszego elementu
+
+    `tail "gogon"`
+
+4.  `take n` - zwraca *n* pierwszych elementów z listy
+
+    `take 2 "gogon"`
+
+5.  `drop n` - pomija *n* pierwszych elementów z listy
+
+    `drop 4 "ile liter"`
+
+6.  Operator `!! n` - zwraca *n*-ty element
+
+    `"kod" !! 2`
