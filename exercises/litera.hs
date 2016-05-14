@@ -9,22 +9,20 @@ module Litera where
 
 import Data.Char
 
-imie = "Fswalker"
+imie = undefined
 
-startsWithX :: [Char] -> Bool
 startsWithX imie =
-    if 'x' == head imie then True else False
-    --let litera = 'x' in if litera == head imie then True else False
-    --if litera == head imie then True else False
-    --where litera = 'x'
+    undefined
         
 r1 = startsWithX imie
 
 startsWith litera imie =
-    if litera == head imie then True else False
+    undefined
+
 r2 = startsWith 'x' imie       
     
-startsWith2 :: Char -> [Char] -> Bool    
+ 
 startsWith2 litera imie =
-    if litera == (toLower $ head imie) then True else False
+    undefined
+    
 r3 = startsWith2 'x' imie
