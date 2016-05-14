@@ -5,7 +5,7 @@
 
 Zdefiniujemy prostą funkcję bezpośrednio w GHCi, która pomnoży liczbę przekazaną do tej funkcji (jako argument) przez 3:
 
-    let triple x = x * 3
+    let triple x = undefined
 
 Napisz funkcję, która podniesie liczbę do kwadratu.
 
