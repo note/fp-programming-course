@@ -48,20 +48,3 @@ spec = do
                     it "should work for big input" $ do
                         fibb 43 `shouldBe` 433494437
 
-    describe "maxList" $ do
-                    it "should throw error for an empty list" $ do
-                        evaluate (maxList []) `shouldThrow` errorCall "maximum of empty list"
-
-    describe "maxList" $ do
-                    it "should work" $ do
-                        map (\x -> maxList x) examples `shouldBe` [1, 4, 4, 9]
-                        where
-                        examples = [
-                              [1],
-                              [1, 2, 3, 4],
-                              [1, 4, 3, 4],
-                              [9, 4, 3, 4]
-                             ]
-
-
-

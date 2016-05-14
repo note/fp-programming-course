@@ -1,8 +1,7 @@
 module Fp.Recursion
 (
     factorial,
-    fibb,
-    maxList
+    fibb
 ) where
 
 -- show on table formulat for factorial
@@ -21,13 +20,5 @@ fibb n = go n (0, 1)
             if x == 0 then prevPrev
             else go (x-1) (prev, prevPrev + prev)
 
--- let's assume that maxLists contains only non-negative numbers
-maxList :: [Integer] -> Integer
-maxList [] = error "maximum of empty list"
-maxList [x] = x
-maxList (h:tail) =
-    if (h > maxTail) then h
-    else maxTail
-    where maxTail = maxList tail
 
 

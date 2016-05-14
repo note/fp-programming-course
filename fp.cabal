@@ -14,7 +14,9 @@ library
   hs-source-dirs:
       src
   exposed-modules:
-      Fp.Recursion
+      Fp.Recursion,
+      Fp.Parabolic,
+      Fp.Various
   build-depends:
       base    == 4.*
 
