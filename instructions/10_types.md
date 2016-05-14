@@ -21,44 +21,37 @@ Poniżej znajdują się najważniejsze typy danych, o któych warto wiedzieć:
 
 ## Porównywanie wartości
 
-W *Prelude* przeprowadź poniższe eksperymenty:
+1. W *Prelude* przeprowadź poniższe eksperymenty:
 
-    let x = 5
-    x == 5
-    x == 6
-    x < 7
-    x > 3
-    x /= 5
+        let x = 5
+        x == 5
+        x == 6
+        x < 7
+        x > 3
+        x /= 5
 
-Sprawdź informacje o typie dwóch operatorów: `(==)` oraz `(<)`.
+2.  Sprawdź informacje o typie dwóch operatorów: `(==)` oraz `(<)`.
+    
+3.  Nie tylko typy liczbowe mogą być między sobą porównywane:
 
-    :t (==)
+        'a' == 'a'
+        'a' == 'b'
+        'a' < 'b'
+        'a' > 'b'
+        'a' == 'A'
+        "Michal" == "Adam"
 
-    :t (<)
+    Kto jest większy: Michal, czy Adam? ;-)
 
-Nie tylko typy liczbowe mogą być między sobą porównywane:
+        "Michal" < "Adam"
+        "Michal" > "Adam"
 
-    'a' == 'a'
-    'a' == 'b'
-    'a' < 'b'
-    'a' > 'b'
-    'a' == 'A'
-    "Michal" == "Adam"
+4.  Czym "pod spodem" jest tak naprawdę typ `String`?
 
-Kto jest większy: Michal, czy Adam? ;-)
+    Spróbuj zatem porównać dwie listy znaków, złożone z pierwszych liter twojego imienia i      nazwiska (albo dowolnych innych).
 
-    "Michal" < "Adam"
-    "Michal" > "Adam"
-
-Czym "pod spodem" jest tak naprawdę typ `String`?
-
-Spróbuj zatem porównać dwie listy znaków, złożone z pierwszych liter twojego imienia i nazwiska (albo dowolnych innych):
-
-    [ 'm', 'i', 'c' ] < [ 'g', 'r', 'y' ]
 
 Wróćmy do liczb. Czy porównywanie list zawierających liczby działa?
-
-    [ 1, 2, 3 ] < [ 3, 2, 1 ]
 
 
 ## AND i OR - operatory logiczne
@@ -113,12 +106,6 @@ Tuple na ratunek! (sprawdź typ każdego wyrażenia)
 
 3. Sprawdź jej typ.
 
-//TODO remove
-
-    let koty = [ "puszek", "okruszek" ]
-    let psy = [ "reksio", "szarik" ]
-    let zwierzaki = koty ++ psy
-    :t zwierzaki
 
 
 ## sygnatury_zadanie.png
