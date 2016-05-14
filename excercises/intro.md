@@ -6,8 +6,8 @@ Intro
 
 Zapisz poniższy kod w pliku hellow.hs:
 
-`helloWorld :: IO ()
-helloWorld = putStrLn ("Hello World!")`
+    helloWorld :: IO ()
+    helloWorld = putStrLn ("Hello World!")
 
 1. Uruchom linię poleceń w folderze fp-programming-course
 2. Wywołaj środowisko REPL (Read-Eval-Print Loop) poleceniem `ghci`
@@ -17,8 +17,9 @@ helloWorld = putStrLn ("Hello World!")`
 1.1
 W nowym pliku: `hello.hs`
 Napisz funkcję, której sygnatura wygląda następująco:
-`hello :: String -> IO ()`
-`hello x = --tutaj kod`
+
+    hello :: String -> IO ()
+    hello x = --tutaj kod
 
 Hint: użyj operatora `++`
 
@@ -27,7 +28,8 @@ Hint: użyj operatora `++`
 ---------
 
 Zdefiniujemy prostą funkcję bezpośrednio w GHCi, która pomnoży liczbę przez 3:
-`let triple x = x * 3`
+
+    let triple x = x * 3
 
 1.2
 Napisz funkcję, która podniesie liczbę do kwadratu.
@@ -378,3 +380,30 @@ Tuple na ratunek! (sprawdź typ każdego wyrażenia)
     :t zwierzaki
 
 
+#### sygnatury_zadanie.png
+
+Na kartkach dopasujcie sygnatury do funkcji.
+Gdy już zapiszecie odpowiedzi - sprawdźcie w REPLu! 
+
+### 11. Currying oraz partial application
+
+1. Załaduj do *Prelude* plik currying.hs
+
+2. Sprawdź sygnaturę typu funkcji `dodaj5`
+
+3. Wpisz w REPL: `let dodaj10 = dodaj5 5`
+
+4. Sprawdź sygnaturę typu funkcji `dodaj10`. Przetestuj ją dla kilku wartości.
+
+5. Wpisz w REPL: `let pietnascie = dodaj10 5`
+
+6. Jaki wynik zwróci `dodaj5 5 5`
+
+Zobaczmy, jaka jest naprawdę sygnatura typów funkcji dodaj5:
+
+    dodaj5 :: Integer -> (Integer -> Integer)
+
+W Haskellu nawiasy nie są potrzebne - są pomijane, ponieważ operator `->` tak działa. Nie jest to do końca operator - jest to po prostu typ, tak jak `Bool`, czy `Int`, a funkcja, którą definiuje jest wartością, tak jak `5`, czy `"wartosc string"`. To oznacza, że można ją przekazywać, jak wartość do inncy funkcji. Tymi zagadnieniami zajmiemy się na kolejnych zajęciach.
+
+Dzięki! :)
+     
