@@ -34,3 +34,4 @@ cabal configure --enable-tests --disable-optimization && cabal build && ./dist/b
 Przykłady pochodzą lub są inspirowane książką autorstwa Chrisa Allena i Julie Moronuki: "Haskell Programming from first principles".
 
 [Haskell book](http://haskellbook.com/)
+
