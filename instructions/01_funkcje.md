@@ -1,6 +1,6 @@
 # 1 Funkcje
 
-## 1. Definiowanie funkcji
+## Definiowanie funkcji
 
 
 Zdefiniujemy prostą funkcję bezpośrednio w GHCi, która pomnoży liczbę przekazaną do tej funkcji (jako argument) przez 3:
