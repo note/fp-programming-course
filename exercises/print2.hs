@@ -1,16 +1,16 @@
 module Print2 where
 
-    myGreeting :: String
-    myGreeting = "hello" ++ " world!"
-    
-    hello :: String
-    hello = "hello"
+myGreeting :: String
+myGreeting = "hello" ++ " world!"
 
-    world :: String
-    world = "world!"
+hello :: String
+hello = "hello"
 
-    main :: IO ()
-    main = do
-        putStrLn myGreeting
-        putStrLn secondGreeting
-        where secondGreeting = concat [hello, " ", world]
+world :: String
+world = "world!"
+
+main :: IO ()
+main = do
+    putStrLn myGreeting
+    putStrLn secondGreeting
+    where secondGreeting = concat [hello, " ", world]
