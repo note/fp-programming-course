@@ -8,15 +8,16 @@ Nitrous.io
 
 [![Nitrous Quickstart](https://nitrous-image-icons.s3.amazonaws.com/quickstart.svg)](https://www.nitrous.io/quickstart?repo=https://github.com/note/fp-programming-course.git)
 
-Jeśli już *magicznie* przeniosłeś się do Web IDE w Nitrous.io, rozpocznij swoją przygodę poleceniem: `stack ghci`
+Jeśli już *magicznie* przeniosłeś się do Web IDE w Nitrous.io, rozpocznij swoją przygodę poleceniami:
+
+    cd exercises
+    stack ghci
+
+Wszystkie instrukcje są ponumerowane i znajdują się w folderze *instructions*
+
+Ćwiczenia znajdziesz w folderze *exercises*
 
 **Powodzenia! :-) **
-
-### Spis ćwiczeń
-
-1. Intro.md
-
-2. TODO
 
 
 --------------------------------
