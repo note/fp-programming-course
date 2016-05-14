@@ -1,18 +1,25 @@
 Intro
 =====
 
+Jeśli jesteś w *Prelude*, wyjdź z niego poleceniem `:q`.
+Przejdź do katalogu z ćwiczeniami:
+
+    cd exercises
+
 0 Hello World
 -------------
 
-Zapisz poniższy kod w pliku hellow.hs:
+Zapisz poniższy kod w nowo utworzonym pliku helloWorld.hs:
 
     helloWorld :: IO ()
     helloWorld = putStrLn ("Hello World!")
 
-1. Uruchom linię poleceń w folderze fp-programming-course
-2. Wywołaj środowisko REPL (Read-Eval-Print Loop) poleceniem `ghci`
-3. Wpisz `:load exercises/helloWorld.hs`
-4. Wywołaj `helloWorld`
+1. Wywołaj środowisko REPL (Read-Eval-Print Loop) poleceniem `ghci`
+
+2. Wpisz `:load exercises/helloWorld.hs`
+
+3. Wywołaj `helloWorld`
+
 
 1.1
 W nowym pliku: `hello.hs`
