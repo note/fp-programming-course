@@ -39,7 +39,15 @@ Jeśli masz już sklonowane repozytorium z poprzednich zajęć:
         cd fp-programming-course
         git fetch
         git checkout lab2
-        
+
+###Materiały
+
+* [http://tryhaskell.org/](http://tryhaskell.org/)
+* [Free book](http://learnyouahaskell.com/chapters)
+* [Not Free book](http://haskellbook.com/)
+* [https://wiki.haskell.org/Applications_and_libraries](https://wiki.haskell.org/Applications_and_libraries)
+* [Fighting spam with haskell](https://code.facebook.com/posts/745068642270222/fighting-spam-with-haskell)
+
 
 Part 3
 ------
