@@ -25,6 +25,25 @@ Wszystkie instrukcje są ponumerowane i znajdują się w folderze *instructions*
 Part 2
 ------
 
+**HINT: klawisz _TAB_ automatycznie uzupełnia nazwy folderó, plików i poleceń**
+
+Po sklonowaniu repozytorium, wykonaj następujące polecenia:
+
+        cd fp-programming-course
+        git checkout lab2
+        chmod u+x ./install.sh
+        ./install.sh
+
+Jeśli masz już sklonowane repozytorium z poprzednich zajęć:
+
+        cd fp-programming-course
+        git fetch
+        git checkout lab2
+        
+
+Part 3
+------
+
 To build and run tests run:
 
 ```
